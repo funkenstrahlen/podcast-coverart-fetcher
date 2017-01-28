@@ -1,4 +1,4 @@
-# Readme
+# podcast-coverart-fetcher
 
 Sometimes I need to get highres coverart images of podcasts. I created this script to easily fetch the coverart image of a podcast by simply providing the podcast rss feed.
 
