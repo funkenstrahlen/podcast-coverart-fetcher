@@ -28,6 +28,12 @@ def main(argv):
 		# downloading the coverart
 		coverart_url = podcast.itune_image
 		print coverart_url
+
+		print 'following redirects...'
+		response = requests.get(coverart_url)
+		coverart_url = response.url # url after redirects
+		print coverart_url
+
 		print 'downloading coverart image...'
 		coverart = urllib.URLopener()
 		filename = coverart_url.rsplit('/', 1)[-1]
